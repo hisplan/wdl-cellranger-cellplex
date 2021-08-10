@@ -1,0 +1,22 @@
+{
+    "Multi.runName": "109_pooled_cellplex",
+    "Multi.gexFastqName": "109_pooled_cellplex_IGO_12194_3",
+    "Multi.gexFastqFiles": [
+        "s3://dp-lab-data/collaborators/aboire/MultiplexingCSFSamples/109_pooled_cellplex/FASTQ/109_pooled_cellplex_IGO_12194_3_S6_L001_I1_001.fastq.gz",
+        "s3://dp-lab-data/collaborators/aboire/MultiplexingCSFSamples/109_pooled_cellplex/FASTQ/109_pooled_cellplex_IGO_12194_3_S6_L001_I2_001.fastq.gz",
+        "s3://dp-lab-data/collaborators/aboire/MultiplexingCSFSamples/109_pooled_cellplex/FASTQ/109_pooled_cellplex_IGO_12194_3_S6_L001_R1_001.fastq.gz",
+        "s3://dp-lab-data/collaborators/aboire/MultiplexingCSFSamples/109_pooled_cellplex/FASTQ/109_pooled_cellplex_IGO_12194_3_S6_L001_R2_001.fastq.gz"
+    ],
+    "Multi.muxFastqName": "2808_109_pooled_cellplex_CPL_IGO_12068_46",
+    "Multi.muxFastqFiles": [
+        "s3://dp-lab-data/collaborators/aboire/MultiplexingCSFSamples/109_pooled_cellplex_CPL/FASTQ/2808_109_pooled_cellplex_CPL_IGO_12068_46_S3_L001_I1_001.fastq.gz",
+        "s3://dp-lab-data/collaborators/aboire/MultiplexingCSFSamples/109_pooled_cellplex_CPL/FASTQ/2808_109_pooled_cellplex_CPL_IGO_12068_46_S3_L001_I2_001.fastq.gz",
+        "s3://dp-lab-data/collaborators/aboire/MultiplexingCSFSamples/109_pooled_cellplex_CPL/FASTQ/2808_109_pooled_cellplex_CPL_IGO_12068_46_S3_L001_R1_001.fastq.gz",
+        "s3://dp-lab-data/collaborators/aboire/MultiplexingCSFSamples/109_pooled_cellplex_CPL/FASTQ/2808_109_pooled_cellplex_CPL_IGO_12068_46_S3_L001_R2_001.fastq.gz"
+    ],
+    "Multi.minAssignmentConfidence": 0.9,
+    "Multi.cmoReference": "s3://dp-lab-data/collaborators/aboire/MultiplexingCSFSamples/109_pooled_cellplex_CPL/cr-multi-results/cmo-ref.csv",
+    "Multi.sampleCmoMap": "s3://dp-lab-data/collaborators/aboire/MultiplexingCSFSamples/109_pooled_cellplex_CPL/cr-multi-results/sample-cmo-map.csv",
+    "Multi.reference": "https://cf.10xgenomics.com/supp/cell-exp/refdata-gex-GRCh38-2020-A.tar.gz",
+    "Multi.dockerRegistry": "quay.io/hisplan"
+}
