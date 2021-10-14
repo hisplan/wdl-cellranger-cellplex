@@ -1,0 +1,20 @@
+{
+    "CellRangerCellPlex.runName": "109_pooled_cellplex",
+    "CellRangerCellPlex.gexFastqName": "test_gex_sample1",
+    "CellRangerCellPlex.gexFastqFiles": [
+        "s3://.../test_gex_sample1_S1_L001_I1_001.fastq.gz",
+        "s3://.../test_gex_sample1_S1_L001_R1_001.fastq.gz",
+        "s3://.../test_gex_sample1_S1_L001_R2_001.fastq.gz"
+    ],
+    "CellRangerCellPlex.muxFastqName": "test_mux_sample1",
+    "CellRangerCellPlex.muxFastqFiles": [
+        "s3://.../test_mux_sample1_S1_L001_I1_001.fastq.gz",
+        "s3://.../test_mux_sample1_S1_L001_R1_001.fastq.gz",
+        "s3://.../test_mux_sample1_S1_L001_R2_001.fastq.gz"
+    ],
+    "CellRangerCellPlex.minAssignmentConfidence": 0.9,
+    "CellRangerCellPlex.cmoReference": "s3://.../cmo-ref.csv",
+    "CellRangerCellPlex.sampleCmoMap": "s3://.../sample-cmo-map.csv",
+    "CellRangerCellPlex.reference": "https://cf.10xgenomics.com/supp/cell-exp/refdata-gex-GRCh38-2020-A.tar.gz",
+    "CellRangerCellPlex.dockerRegistry": "quay.io/hisplan"
+}
