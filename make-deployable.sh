@@ -2,7 +2,7 @@
 
 wf_name="cellranger-cellplex"
 version="6.0.2"
-files="submit.sh CellRangerCellPlex.deps.zip CellRangerCellPlex.wdl CellRangerCellPlex.options.aws.json configs/template.*.json"
+files="submit.sh CellRangerCellPlex.deps.zip CellRangerCellPlex.wdl CellRangerCellPlex.options.aws.json configs/template.*.json configs/template.*.csv"
 dest="$HOME/scing/bin"
 
 usage()
