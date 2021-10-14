@@ -49,7 +49,8 @@ workflow Multi {
         File tagCallesPerCell = Multi.tagCallesPerCell
         File tagCallsSummary = Multi.tagCallsSummary
 
-        File perSampleOuts = Multi.perSampleOuts
+        File perSampleOutsSummary = Multi.perSampleOutsSummary
+        Array[File] perSampleOuts = Multi.perSampleOuts
 
         File pipestanceMeta = Multi.pipestanceMeta
     }

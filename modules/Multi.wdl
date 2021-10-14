@@ -87,7 +87,32 @@ EOF
         # targz the per_sample_output folder
         if [ $? -eq 0 ]
         then
-            tar czf per-sample-outs.tgz ~{outDirPerSample}/*
+            # ├── count
+            # │   ├── analysis
+            # │   │   ├── clustering
+            # │   │   ├── diffexp
+            # │   │   ├── pca
+            # │   │   ├── tsne
+            # │   │   └── umap
+            # │   ├── cloupe.cloupe
+            # │   ├── feature_reference.csv
+            # │   ├── sample_alignments.bam
+            # │   ├── sample_alignments.bam.bai
+            # │   ├── sample_barcodes.csv
+            # │   ├── sample_feature_bc_matrix
+            # │   │   ├── barcodes.tsv.gz
+            # │   │   ├── features.tsv.gz
+            # │   │   └── matrix.mtx.gz
+            # │   ├── sample_feature_bc_matrix.h5
+            # │   └── sample_molecule_info.h5
+            # ├── metrics_summary.csv
+            # └── web_summary.html
+
+            # gather metrics_summary.csv & web_summary.html from each sample and make a tarball
+            find ~{outDirPerSample} -maxdepth 2 -name "*.html" -o -name "*.csv" | tar -cf per-sample-outs-summary.tar --files-from -
+
+            # each sample outs will be made into a tarball
+            ls -1 ~{outDirPerSample} | xargs -I {} tar cf {}.outs.tar ~{outDirPerSample}/{}/
         fi
 
     >>>
@@ -127,7 +152,8 @@ EOF
         File tagCallesPerCell = outDirMulti + "/multiplexing_analysis/tag_calls_per_cell.csv"
         File tagCallsSummary = outDirMulti + "/multiplexing_analysis/tag_calls_summary.csv"
 
-        File perSampleOuts = "per-sample-outs.tgz"
+        File perSampleOutsSummary = "per-sample-outs-summary.tar"
+        Array[File] perSampleOuts = glob("*.outs.tar")
 
         File pipestanceMeta = runName + "/" + runName + ".mri.tgz"
     }
