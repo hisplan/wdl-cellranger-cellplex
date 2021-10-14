@@ -26,7 +26,7 @@ You need two additional CSV files:
 
 For how to create these CSV files, please refer to the following pages:
 
-- https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/using/multi#cmoreference"
+- https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/using/multi#cmoreference
 - Refer to the `[samples]` section in https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/using/multi#cellranger-multi
 
 ### Reference
