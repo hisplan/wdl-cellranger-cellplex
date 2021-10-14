@@ -82,8 +82,6 @@ EOF
             --localcores=~{cores - 1} \
             --localmem=~{memoryGB - 5}
 
-        find ~{outDir}
-
         # targz the per_sample_output folder
         if [ $? -eq 0 ]
         then

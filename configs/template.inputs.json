@@ -14,7 +14,7 @@
     ],
     "CellRangerCellPlex.minAssignmentConfidence": 0.9,
     "CellRangerCellPlex.cmoReference": "s3://.../cmo-ref.csv",
-    "CellRangerCellPlex.sampleCmoMap": "s3://.../sample-cmo-map.csv",
+    "CellRangerCellPlex.sampleCmoMap": "s3://.../cmo-map.csv",
     "CellRangerCellPlex.reference": "https://cf.10xgenomics.com/supp/cell-exp/refdata-gex-GRCh38-2020-A.tar.gz",
     "CellRangerCellPlex.dockerRegistry": "quay.io/hisplan"
 }
