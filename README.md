@@ -21,8 +21,8 @@ First, you need one inputs file and one labels file:
 
 You need two additional CSV files:
 
-- `configs/cmo-ref.csv`
-- `sample-cmo.map.csv`
+- `configs/template.cmo-ref.csv`
+- `configs/template.cmo-map.csv`
 
 For how to create these CSV files, please refer to the following pages:
 
