@@ -9,4 +9,4 @@ fi
 java -jar ${SCING_HOME}/devtools/womtool.jar \
     validate \
     CellRangerCellPlex.wdl \
-    --inputs ./configs/CellRangerCellPlex.inputs.json
+    --inputs ./configs/template.inputs.json

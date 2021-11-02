@@ -22,7 +22,7 @@ task Multi {
         sampleCmoMap: { help: "Refer to the [samples] section in https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/using/multi#cellranger-multi" }
     }
 
-    String cellRangerVersion = "6.0.2"
+    String cellRangerVersion = "6.1.1"
     String dockerImage = dockerRegistry + "/cromwell-cellranger:" + cellRangerVersion
     Float inputSize = size(gexFastqFiles, "GiB") + size(muxFastqFiles, "GiB") + 20
     Int cores = 16
