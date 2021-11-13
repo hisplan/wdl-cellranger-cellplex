@@ -13,6 +13,9 @@ task Multi {
         File sampleCmoMap
         String reference
 
+        Boolean includeIntrons
+        Int? expectCells = 3000
+
         # docker-related
         String dockerRegistry
     }
@@ -22,7 +25,7 @@ task Multi {
         sampleCmoMap: { help: "Refer to the [samples] section in https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/using/multi#cellranger-multi" }
     }
 
-    String cellRangerVersion = "6.1.1"
+    String cellRangerVersion = "6.1.2"
     String dockerImage = dockerRegistry + "/cromwell-cellranger:" + cellRangerVersion
     Float inputSize = size(gexFastqFiles, "GiB") + size(muxFastqFiles, "GiB") + 20
     Int cores = 16
@@ -60,6 +63,8 @@ task Multi {
 [gene-expression]
 reference,$(pwd)/reference
 min-assignment-confidence,~{minAssignmentConfidence}
+expect-cells,~{expectCells}
+include-introns,~{includeIntrons}
 
 [feature]
 reference,~{cmoReference}

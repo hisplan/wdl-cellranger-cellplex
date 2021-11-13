@@ -1,7 +1,7 @@
 #!/bin/bash -e
 
 wf_name="cellranger-cellplex"
-version="6.1.1"
+version="6.1.2"
 files="submit.sh CellRangerCellPlex.deps.zip CellRangerCellPlex.wdl CellRangerCellPlex.options.aws.json configs/template.*.json configs/template.*.csv"
 dest="$HOME/scing/bin"
 

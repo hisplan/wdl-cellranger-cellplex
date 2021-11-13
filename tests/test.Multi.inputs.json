@@ -18,5 +18,7 @@
     "Multi.cmoReference": "s3://dp-lab-data/collaborators/aboire/MultiplexingCSFSamples/109_pooled_cellplex_CPL/cr-multi-results/cmo-ref.csv",
     "Multi.sampleCmoMap": "s3://dp-lab-data/collaborators/aboire/MultiplexingCSFSamples/109_pooled_cellplex_CPL/cr-multi-results/sample-cmo-map.csv",
     "Multi.reference": "https://cf.10xgenomics.com/supp/cell-exp/refdata-gex-GRCh38-2020-A.tar.gz",
+    "Multi.includeIntrons": false,
+    "Multi.expectCells": 3000,
     "Multi.dockerRegistry": "quay.io/hisplan"
 }

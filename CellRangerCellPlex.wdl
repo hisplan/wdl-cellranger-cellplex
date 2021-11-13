@@ -15,6 +15,9 @@ workflow CellRangerCellPlex {
         File sampleCmoMap
         String reference
 
+        Boolean includeIntrons
+        Int? expectCells = 3000
+
         # docker-related
         String dockerRegistry
     }
@@ -30,6 +33,8 @@ workflow CellRangerCellPlex {
             cmoReference = cmoReference,
             sampleCmoMap = sampleCmoMap,
             reference = reference,
+            includeIntrons = includeIntrons,
+            expectCells = expectCells,
             dockerRegistry = dockerRegistry,
     }
 
