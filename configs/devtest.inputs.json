@@ -1,0 +1,22 @@
+{
+    "CellRangerCellPlex.runName": "cell-lines",
+    "CellRangerCellPlex.gexFastqName": "2537_CellLines_CellPlex_test_IGO_11963_2",
+    "CellRangerCellPlex.gexFastqFiles": [
+        "s3://dp-lab-test/cellplex/gex/2537_CellLines_CellPlex_test_IGO_11963_2_S1_L001_R1_001.fastq.gz",
+        "s3://dp-lab-test/cellplex/gex/2537_CellLines_CellPlex_test_IGO_11963_2_S1_L001_R2_001.fastq.gz"
+    ],
+    "CellRangerCellPlex.muxFastqName": "2537_CellLines_CellPlex_test_CPL_IGO_11874_11",
+    "CellRangerCellPlex.muxFastqFiles": [
+        "s3://dp-lab-test/cellplex/cpl/2537_CellLines_CellPlex_test_CPL_IGO_11874_11_S11_L001_I1_001.fastq.gz",
+        "s3://dp-lab-test/cellplex/cpl/2537_CellLines_CellPlex_test_CPL_IGO_11874_11_S11_L001_I2_001.fastq.gz",
+        "s3://dp-lab-test/cellplex/cpl/2537_CellLines_CellPlex_test_CPL_IGO_11874_11_S11_L001_R1_001.fastq.gz",
+        "s3://dp-lab-test/cellplex/cpl/2537_CellLines_CellPlex_test_CPL_IGO_11874_11_S11_L001_R2_001.fastq.gz"
+    ],
+    "CellRangerCellPlex.minAssignmentConfidence": 0.9,
+    "CellRangerCellPlex.cmoReference": "s3://dp-lab-test/cellplex/devtest.cmo-ref.csv",
+    "CellRangerCellPlex.sampleCmoMap": "s3://dp-lab-test/cellplex/devtest.cmo-map.csv",
+    "CellRangerCellPlex.reference": "https://cf.10xgenomics.com/supp/cell-exp/refdata-gex-mm10-2020-A.tar.gz",
+    "CellRangerCellPlex.includeIntrons": false,
+    "CellRangerCellPlex.expectCells": 3000,
+    "CellRangerCellPlex.dockerRegistry": "quay.io/hisplan"
+}

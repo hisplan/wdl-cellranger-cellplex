@@ -1,0 +1,9 @@
+{
+    "pipelineType": "CellRangerCellPlex",
+    "project": "devtest",
+    "sample": "cell-lines",
+    "owner": "chunj",
+    "destination": "s3://dp-lab-gwf-core/outputs/cr-multi-results/",
+    "transfer": "skip",
+    "comment": ""
+}

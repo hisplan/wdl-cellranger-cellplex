@@ -1,0 +1,7 @@
+id,name,read,pattern,sequence,feature_type
+A0305,PDEC_H9_PM_Ch,R2,5P(BC),CGCGATATGGTCGGA,Multiplexing Capture
+A0306,PDEC_H9_PT_Ch,R2,5P(BC),AAGATGAGGTCTGTG,Multiplexing Capture
+A0307,C5_1,R2,5P(BC),AAGCTCGTTGGAAGA,Multiplexing Capture
+A0308,KPC_2,R2,5P(BC),CGGATTCCACATCAT,Multiplexing Capture
+A0309,KPF3_Lplus,R2,5P(BC),GTTGATCTATAACAG,Multiplexing Capture
+A0310,KPF2_Lplus,R2,5P(BC),GCAGGAGGTATCAAT,Multiplexing Capture
